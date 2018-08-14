@@ -1,0 +1,20 @@
+.btn-add{
+  margin-top:1rem;
+}
+.btn{
+  margin:5px;
+}
+table{
+  background: white;
+}
+tbody tr{
+  border-left:2px solid #191d1e;
+}
+tbody tr:hover{
+  border-left:2px solid #e53935;
+}
+thead{
+  color:#4b4b4b;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}

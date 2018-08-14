@@ -1,0 +1,66 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<div class="row buttons">
+  
+  <form>
+  <div class="col s2 right-align right btn-add">
+    <a class="btn blue waves-effect waves-light btn-medium left-align red"  (click)="addProfessor()"><i class="material-icons left small">add</i>Adicionar</a>
+  </div>
+  <div class=" offset-s4 div col s6 left-align ">
+    <div class="input-field col s8 right">
+      <i class="material-icons prefix">search</i>
+      <input id="search" type="search" class="validate">
+      <label for="search">Pesquisar</label>
+      <i class="material-icons">close</i>
+    </div>
+  </div>
+</form>
+</div>
+  <div class="row">
+    <div class="col s12 ">
+      <table class="highlight" cellpadding="10">
+        <thead>
+          <tr>
+            <th>Avatar</th>
+            <th>Nome</th>
+            <th>Apelido</th>
+            <th>Faixa</th>
+            <th>Pagamento</th>
+            <th class=" center">Ações</th>
+          </tr>
+        </thead>
+
+        <tbody  *ngFor="let user of users">
+          <tr>
+            <td><img src="assets/avatar2.png" height="50px" alt=""></td>
+            <td>{{user.name}}</td>
+            <td>{{user.nickname}}</td>
+            <td><img src="assets/{{user.belt}}.png" height="50px" alt=""></td>
+            <td>{{user.payment}}</td>
+            <td class="center">
+              <a class="btn blue waves-effect waves-light btn modal-trigger" href="#modal1"> <i class="material-icons medium">pageview</i></a>
+              <a class="btn blue"> <i class="material-icons medium">edit</i></a>
+              <a class="btn red"> <i class="material-icons ">delete</i></a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+          <h4>teste</h4>
+          <p>teste</p>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+        </div>
+      </div>
+      <ul class="pagination center">
+        <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+        <li class="active blue"><a href="#!">1</a></li>
+        <li class="waves-effect"><a href="#!">2</a></li>
+        <li class="waves-effect"><a href="#!">3</a></li>
+        <li class="waves-effect"><a href="#!">4</a></li>
+        <li class="waves-effect"><a href="#!">5</a></li>
+        <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+      </ul>
+    </div>
+  </div>

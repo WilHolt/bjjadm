@@ -1,0 +1,35 @@
+table{
+  background: white;
+}
+tbody tr{
+  border-left:2px solid #191d1e;
+}
+tbody tr:hover{
+  border-left:2px solid #e53935;
+}
+thead{
+  color:#4b4b4b;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+td a{
+  padding: 10px;
+}
+td a:hover{
+  transform: scale3d(1.1,1.1,1.2);
+}
+.card-bg{
+  padding: 20px !important;
+
+}
+.input-field label {
+  color: #4b4b4b;
+}
+.input-field input[type=text]:focus + label {
+  color: #4b4b4b;
+
+}
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid #4b4b4b;
+  box-shadow: 0 1px 0 0 #000;
+}

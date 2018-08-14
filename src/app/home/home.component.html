@@ -1,0 +1,47 @@
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<div class="row full ">
+  <div class="col s2 side_menu grey darken-4">
+    <div class="row">
+      <div class=" col s12  center ">
+        <h4 class="white-text">CB TEAM</h4>
+      </div>
+      <div class="row center avatar">
+      <img src="assets/avatar2.png" height="120px" width="auto" alt="">
+      </div>
+    </div>
+    <div class="row ">
+      <div class="col s12 side">
+        <ul class="  ">
+          <li class=""><a routerLink="dashboard"><img src="assets/dashboard.png" height="20px" alt="">Dashboard</a></li>
+          <li class=""><a routerLink="aluno"><img src="assets/user_m.png" height="20px" alt="">Alunos</a></li>
+          <li class=""><a routerLink="professor"><img src="assets/student.png" height="20px" alt="">Professores</a></li>
+          <li class=""><a routerLink="financeiro"><img src="assets/finance.png" height="20px" alt="">Financeiro</a></li>
+          <!-- <li class=""><a routerLink="">Cadastro</a> </li> -->
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="col s10 content">
+    <div class="row   ">
+      <div class="col s12 head ">
+        <div class="row">
+          <div class="col s6">
+            <h5 class="white-text">DASHBOARD</h5>
+          </div>
+          <div class="col s6">
+              <h5> <a class="icons right" routerLink="/login"><img src="assets/logout.png" height="32px" alt=""></a></h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col s12 ">
+      <h5 class="menu-color">BEM VINDO, {{user.username}}</h5>
+      <div class="hr">
+
+      </div>
+      <div class="row">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,44 @@
+/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/angular-calendar/css/angular-calendar.css";
+h1, h2, h3, h4, h5, p ,ul , li, a, span {
+  font-family: Lato Medium !important;
+  color:#191d1e;
+}
+.menu-color{
+  color: #191d1e;
+}
+.menu-border{
+  color:#151719;
+}
+
+.card-bg{
+  border:1px solid #d2d2d2 !important;
+  background: white !important;
+  color:#191d1e !important;
+}
+.card{
+    box-shadow: none!important;
+}
+.card-title{
+  font-size: 1.3rem;
+}
+.btn-card{
+  background: #e53935;
+}
+.border-red{
+    border-left: 3px solid #e53935 !important;
+}
+.border-blue{
+    border-left: 3px solid #191d1e !important;
+}
+
+.border-base{
+    border-left: 3px solid #d2d2d2 !important;
+}
+.boder{
+  border: 1px solid #d2d2d2 !important;
+
+}
+.card-blue{
+    background:  #191d1e !important;
+}
